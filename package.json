@@ -1,0 +1,28 @@
+{
+  "name": "mernheroku",
+  "version": "1.0.0",
+  "description": "Mern stack to Heroku",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^15.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-scofield/mernheroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/james-scofield/mernheroku/issues"
+  },
+  "homepage": "https://github.com/james-scofield/mernheroku#readme"
+}
