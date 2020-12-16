@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Mern stack to Heroku",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.15.0"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "node": "^15.4.0"
@@ -12,7 +15,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
-
   },
   "repository": {
     "type": "git",
